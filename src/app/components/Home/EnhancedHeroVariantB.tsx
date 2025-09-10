@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExpertiseRotator } from './ExpertiseRotator';
+import ExpertiseRotator from './ExpertiseRotator';
 
 // Brand color from Navbar.tsx
 const BRAND_COLOR = '#40ED70'; // Green color used in navbar
