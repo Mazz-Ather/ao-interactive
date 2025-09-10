@@ -54,7 +54,7 @@ const ExpertiseRotator = ({ items, onItemClick }: { items: { label: string; slug
   );
 };
 
-export default function ExpertiseSection({ handleExpertiseClick }) {
+export default function ExpertiseSection({ handleExpertiseClick }: { handleExpertiseClick: (item: { label: string; slug: string }) => void }) {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 50 }}
