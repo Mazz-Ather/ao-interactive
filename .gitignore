@@ -1,4 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# dependencies
+node_modules
+
+# build output
+.next
+out
+dist
+
+# misc
+.vercel
+.DS_Store
+*.log
 
 # dependencies
 /node_modules
