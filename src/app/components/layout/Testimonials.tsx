@@ -60,7 +60,7 @@ const testimonials = [
 ];
 
 // Single testimonial card component
-const TestimonialCard = ({ testimonial }) => (
+const TestimonialCard = ({ testimonial }: { testimonial: { text: string; image: string; name: string; role: string; } }) => (
   <div className="bg-[#1f1f1f] border border-gray-700 rounded-lg p-5 mb-4 hover:border-[#40ED70] hover:bg-[#1a1a1a] transition-all duration-300 shadow-sm">
     <p className="text-gray-300 text-sm leading-6 mb-4">
       "{testimonial.text}"
@@ -84,7 +84,20 @@ const TestimonialCard = ({ testimonial }) => (
 );
 
 // Scrolling column component
-const ScrollingColumn = ({ testimonials, duration, reverse = false }) => {
+const ScrollingColumn = ({ 
+  testimonials, 
+  duration = 10, 
+  reverse = false 
+}: {
+  testimonials: Array<{
+    text: string;
+    image: string;
+    name: string;
+    role: string;
+  }>;
+  duration?: number;
+  reverse?: boolean;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
   
   // Duplicate testimonials for seamless loop

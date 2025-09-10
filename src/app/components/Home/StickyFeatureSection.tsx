@@ -80,7 +80,7 @@ const AnimatedHeader = () => {
     return (
         <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 
-                ref={headerRef}
+                ref={headerRef as React.RefObject<HTMLHeadingElement>}
                 className={`text-4xl md:text-5xl font-bold transition-all duration-700 ease-out ${headerInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ 
                     transformStyle: 'preserve-3d',
@@ -91,7 +91,7 @@ const AnimatedHeader = () => {
 
             </h2>
             <p 
-                ref={pRef}
+                ref={pRef as React.RefObject<HTMLParagraphElement>}
                 className={`text-lg mt-4 transition-all duration-700 ease-out delay-200 ${pInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ 
                     transformStyle: 'preserve-3d',
@@ -177,8 +177,8 @@ export function StickyFeatureSection() {
                                             loading="lazy"
                                             className="w-full h-auto rounded-lg shadow-lg object-cover"
                                             onError={(e) => { 
-                                                e.target.onerror = null; 
-                                                e.target.src = "https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found"; 
+                                                (e.target as HTMLImageElement).onerror = null;
+                                                (e.target as HTMLImageElement).src = "https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found";
                                             }}
                                         />
                                     </div>

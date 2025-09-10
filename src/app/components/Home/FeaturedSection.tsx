@@ -359,7 +359,7 @@ export const EnhancedFeaturedSection: React.FC<FeaturedSectionProps> = ({
               
               <div className="flex items-center justify-center space-x-6 mb-8">
                 <div className="h-px w-32 bg-gradient-to-r from-transparent via-green-400 to-transparent"></div>
-                <AwardIcon className="text-green-400 animate-pulse-glow" />
+                <AwardIcon/>
                 <div className="h-px w-32 bg-gradient-to-l from-transparent via-green-400 to-transparent"></div>
               </div>
               
@@ -396,7 +396,7 @@ export const EnhancedFeaturedSection: React.FC<FeaturedSectionProps> = ({
                     <div className="absolute top-6 right-6">
                       <div className="glass-card px-4 py-3 rounded-full">
                         <div className="flex items-center space-x-2">
-                          <TrophyIcon className="w-5 h-5 text-green-400" />
+                          <TrophyIcon/>
                           <span className="text-white font-semibold text-sm">IGNITE Program</span>
                         </div>
                       </div>

@@ -7,7 +7,6 @@ import { sampleData } from "./data/featured-data";
 import ServicesSection from "./components/Home/servicesSection";
 import { StickyFeatureSection } from "./components/Home/StickyFeatureSection";
 import FeaturedProjects from "./components/Home/FeaturedProjects";
-import { WhyChooseUs } from "./components/Home/whyChooseUs";
 import { GooeyMarquee } from "./components/ui/gooeyMarquee";
 import Heading from "./components/Home/Heading";
 import ContactForm from "./components/layout/ContactForm";

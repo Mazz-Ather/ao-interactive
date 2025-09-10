@@ -149,7 +149,18 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       }}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      variants={containerVariants}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.8,
+            ease: "easeOut",
+            staggerChildren: 0.1
+          }
+        }
+      }}
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
@@ -166,7 +177,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         {/* Header Section */}
         <motion.div
           className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-16 lg:mb-24"
-          variants={itemVariants}
+          variants={{
+            hidden: { opacity: 0, y: 30 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.6,
+                ease: "easeOut"
+              }
+            }
+          }}
         >
           <div className="mb-8 lg:mb-0 lg:max-w-2xl">
             <motion.h2
@@ -242,7 +263,18 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         </motion.div>
 
         {/* Services List */}
-        <motion.div className="space-y-2" variants={itemVariants}>
+        <motion.div className="space-y-2" variants={{
+          hidden: { opacity: 0, y: 30 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.6,
+              ease: "easeOut",
+              staggerChildren: 0.1
+            }
+          }
+        }}>
           {services.map((service, index) => (
             <motion.div
               key={service.code}
@@ -251,7 +283,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 borderColor: activeIndex === index || isHovered === index ? '#40ED70' : 'rgba(255,255,255,0.1)',
                 boxShadow: activeIndex === index || isHovered === index ? '0 0 15px #40ED70' : 'none',
               }}
-              variants={itemVariants}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.6,
+                    ease: "easeOut"
+                  }
+                }
+              }}
               whileHover={{
                 y: -2,
                 transition: { duration: 0.2, ease: [0.4, 0, 0.2, 1] }
@@ -328,14 +370,34 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
-                    variants={expandedContentVariants}
+                    variants={{
+                      hidden: { opacity: 0, y: 30 },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                          duration: 0.6,
+                          ease: "easeOut"
+                        }
+                      }
+                    }}
                   >
                     <div className="p-6 lg:p-8">
                       <div className="grid lg:grid-cols-2 gap-8 items-start">
                         {/* Image */}
                         <motion.div
                           className="relative overflow-hidden rounded-xl shadow-lg group"
-                          variants={contentItemVariants}
+                          variants={{
+                            hidden: { opacity: 0, y: 30 },
+                            visible: {
+                              opacity: 1,
+                              y: 0,
+                              transition: {
+                                duration: 0.6,
+                                ease: "easeOut"
+                              }
+                            }
+                          }}
                         >
                           <motion.img
                             src={service.imageSrc}
@@ -352,7 +414,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         {/* Content */}
                         <motion.div
                           className="space-y-6"
-                          variants={contentItemVariants}
+                          variants={{
+                            hidden: { opacity: 0, y: 30 },
+                            visible: {
+                              opacity: 1,
+                              y: 0,
+                              transition: {
+                                duration: 0.6,
+                                ease: "easeOut"
+                              }
+                            }
+                          }}
                         >
                           <motion.p
                             className="text-lg leading-relaxed"
@@ -407,7 +479,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         {services.length === 0 && (
           <motion.div
             className="text-center py-16"
-            variants={itemVariants}
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 0.6,
+                  ease: "easeOut"
+                }
+              }
+            }}
           >
             <p style={{ color: '#6b7280', fontSize: '1.125rem' }}>No services available at the moment.</p>
           </motion.div>
