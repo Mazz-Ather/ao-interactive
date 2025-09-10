@@ -9,7 +9,8 @@ const expertiseItems = [
   { label: "Gamification", slug: "gamification" }
 ];
 
-const ExpertiseRotator = ({ items, onItemClick }) => {
+// ExpertiseRotator Component
+const ExpertiseRotator = ({ items, onItemClick }: { items: { label: string; slug: string }[]; onItemClick: (item: { label: string; slug: string }) => void }) => {
   const [isPaused, setIsPaused] = useState(false);
 
   // Duplicate items for seamless infinite loop

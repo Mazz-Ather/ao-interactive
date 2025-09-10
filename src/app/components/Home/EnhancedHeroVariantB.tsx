@@ -183,7 +183,7 @@ const EnhancedHeroVariantB: React.FC = () => {
                 loop 
                 playsInline
                 poster="/images/video-poster.jpg"
-                loading="lazy"
+                // loading="lazy"
               >
                 <source src="/videos/hero-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
