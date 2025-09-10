@@ -7,7 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactForm() {
 	return (
-		<main className="relative flex min-h-screen w-full items-center justify-center p-4 bg-[#141414] text-white">
+		<main className="relative flex min-h-screen w-full items-center justify-center pt-4 bg-[#141414] text-white">
 			<div className="mx-auto max-w-6xl">
 				<ContactCard
 					title="Get in touch"

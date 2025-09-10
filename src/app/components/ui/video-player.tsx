@@ -47,7 +47,7 @@ return (
 
 const VideoPlayer = ({ src }: { src: string }) => {
 const videoRef = useRef<HTMLVideoElement>(null);
-const [isPlaying, setIsPlaying] = useState(false);
+const [isPlaying, setIsPlaying] = useState(true);
 const [volume, setVolume] = useState(1);
 const [progress, setProgress] = useState(0);
 const [isMuted, setIsMuted] = useState(false);
@@ -131,6 +131,7 @@ return (
       onTimeUpdate={handleTimeUpdate}
       src={src}
       onClick={togglePlay}
+      autoPlay={true}
     />
 
     <AnimatePresence>

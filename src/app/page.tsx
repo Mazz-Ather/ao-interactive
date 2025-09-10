@@ -15,6 +15,8 @@ import VideoPlayer from "./components/ui/video-player";
 import FeaturedSection from "./components/Home/FeaturedSection";
 import Testimonials from "./components/layout/Testimonials";
 import Loader from "./components/layout/Loader";
+import FeaturesCards from "./components/ui/feature-shader";
+import { BlogPosts } from "./components/ui/blog-posts";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -67,9 +69,49 @@ export default function Home() {
           <StickyFeatureSection/>
           <FeaturedProjects/>
           <Testimonials />
+          <FeaturesCards />
           {/* <WhyChooseUs /> */}
           <ContactForm/>
-          <Blog/>
+          {/* <Blog/> */}
+          <BlogPosts  title="Our Most Popular Articles of 2024!"
+        description="Discover the most engaging content from our amazing community of developers and designers"
+        backgroundLabel="BLOG"
+        backgroundPosition="left"
+        posts={[
+        {
+          id: 1,
+          href:'/blog/1',
+          
+      title: "Immersive Technology for Business & Industry",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_9k5EinZeCzzZgV_kbd0Obhfz3p-5b7LLw&s",
+      category: "Web Development",
+          views: 2180,
+          readTime: 8,
+          rating: 5
+        },
+        {
+          id: 2,
+          href:'/blog/2',
+          title: "Architectural & Product Visualization",
+          category: "Programming",
+          imageUrl: "https://ao-interactive.com/wp/wp-content/themes/yootheme/cache/thumb5-117cbaab.webp",
+          views: 1456,
+          readTime: 12,
+          rating: 4
+        },
+        {
+          id: 3,
+          href:'/blog/3',
+          title: " Creative Content & Digital Storytelling",
+          category: "UI/UX Design",
+          imageUrl: "https://ao-interactive.com/wp/wp-content/themes/yootheme/cache/thumb6-e0a905cf.webp",
+          views: 987,
+          readTime: 6,
+          rating: 4
+        }
+      ]}
+        className="mb-16"
+      />
         </div>
       )}
 

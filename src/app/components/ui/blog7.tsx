@@ -39,13 +39,13 @@ const Blog7 = ({
     {
       id: "post-1",
       title: "Getting Started with shadcn/ui Components",
+      image: "/images/block/placeholder-dark-1.svg",
       summary:
         "Learn how to quickly integrate and customize shadcn/ui components in your Next.js projects. We'll cover installation, theming, and best practices for building modern interfaces.",
       label: "Tutorial",
       author: "Sarah Chen",
       published: "1 Jan 2024",
       url: "https://shadcnblocks.com",
-      image: "/images/block/placeholder-dark-1.svg",
     },
     {
       id: "post-2",

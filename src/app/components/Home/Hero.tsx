@@ -7,10 +7,10 @@ import Image from 'next/image';
 import BookingModal from './BookingModal';
 
   const expertiseItems = [
-    { label: "AI Innovation", slug: "ai-innovation" },
-    { label: "Metaverse & Virtual Ecosystems", slug: "metaverse-virtual-ecosystems" },
-    { label: "Spatial Computing & Digital Twins", slug: "spatial-computing-digital-twins" },
-    { label: "AR/VR Mixed Reality Solutions", slug: "ar-vr-mixed-reality" },
+    { label: "Digital Transformation", slug: "digital-transformation" },
+    { label: "Events & Exhibitions", slug: "events-exhibitions" },
+    { label: "3D Animation & Visualisation", slug: "3d-animation-visualisation" },
+    { label: "Real Estate Digital Twins", slug: "real-estate-digital-twins" },
     { label: "Gamification", slug: "gamification" }
   ];
  
@@ -33,10 +33,10 @@ const HeroHome = () => {
   const [currentService, setCurrentService] = useState(0);
   
   const services = [
-    "AI Innovation",
-    "Metaverse & Virtual Ecosystems", 
-    "Spatial Computing & Digital Twins",
-    "AR/VR Mixed Reality Solutions",
+    "Digital Transformation",
+    "Events & Exhibitions", 
+    "3D Animation & Visualisation",
+    "Real Estate Digital Twins",
     "Gamification"
   ];
 
