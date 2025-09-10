@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🏗️ Homepage Hierarchy Explained in Simple Words
 
-## Getting Started
+1. Hero Section (Top Fold)
 
-First, run the development server:
+This is the very first thing users see when they land.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Heading = company’s main promise (SEO keyword).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Subtext = your value proposition.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visual = premium looping video/animation montage (you already have VR projects).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+CTAs = “Start Your Project” + “View Our Work.”
 
-## Learn More
+👉 This came from the PDF’s intro text + project showcase images.
 
-To learn more about Next.js, take a look at the following resources:
+2. Trusted By / Clients
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A row with client logos (MOE, Border Guard, Expo, Vision 2030).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Builds instant trust.
 
-## Deploy on Vercel
+👉 These logos/clients were listed in the PDF.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Services Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Snapshot of the company’s main offerings (Digital Transformation, 3D Animation, Gamification, etc.).
+
+CTA to full Services page.
+
+👉 The services list is directly from the PDF.
+
+4. Industries Served
+
+Grid layout: Real Estate, Events, Education, Healthcare, Defense, etc.
+
+CTA to Industries page.
+
+👉 Straight from the “industries served” section in the PDF.
+
+5. Featured Projects / Portfolio
+
+Highlight 3 big projects with visuals: Ancient Makkah VR, Border Guard Simulation, Expo Booths.
+
+CTA to Portfolio page.
+
+👉 Directly from the PDF’s case studies/projects.
+
+6. Testimonials / Impact Stories
+
+Short client quotes or video testimonials.
+
+Builds social proof.
+
+👉 The PDF mentioned impact & client results, so I structured it as testimonials.
+
+7. Why Choose AO Interactive (Differentiators)
+
+3–4 pillars explaining what makes the company special.
+
+Example: Vision 2030 alignment, VR/AR expertise, proven government work, full-cycle delivery.
+
+👉 Comes from the company mission & selling points in the PDF.
+
+8. Blog / Insights (Optional)
+
+Content marketing for SEO.
+
+Future-proof section: articles about VR, training, etc.
+
+👉 The PDF mentioned thought leadership & innovation → turned into blog preview.
+
+9. Final Call-to-Action
+
+Before footer → strong “Book a Consultation” CTA.
+
+👉 PDF repeatedly pushed getting clients to start projects → so I put CTA here.
+
+🔎 So, in short
+
+The PDF had the raw material (services, industries, projects, testimonials, mission, Vision 2030).
+
+I converted it into a proper homepage flow that any modern corporate website should follow.
+
+This way, instead of being scattered info in PDF slides, it’s now a user journey:
+Problem → Solution → Proof → Trust → CTA.

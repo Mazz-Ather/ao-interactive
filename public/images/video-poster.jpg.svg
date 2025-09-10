@@ -1,0 +1,8 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#1A1A1A"/>
+  <rect x="440" y="260" width="400" height="200" rx="20" fill="#40ED70" fill-opacity="0.3"/>
+  <path d="M640 310C631.716 310 625 316.716 625 325V395C625 403.284 631.716 410 640 410C648.284 410 655 403.284 655 395V325C655 316.716 648.284 310 640 310Z" fill="white"/>
+  <path d="M580 310C571.716 310 565 316.716 565 325V395C565 403.284 571.716 410 580 410C588.284 410 595 403.284 595 395V325C595 316.716 588.284 310 580 310Z" fill="white"/>
+  <path d="M700 310C691.716 310 685 316.716 685 325V395C685 403.284 691.716 410 700 410C708.284 410 715 403.284 715 395V325C715 316.716 708.284 310 700 310Z" fill="white"/>
+  <text x="640" y="480" font-family="Arial" font-size="24" text-anchor="middle" fill="white">Video Poster Placeholder</text>
+</svg>

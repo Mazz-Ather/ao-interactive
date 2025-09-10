@@ -1,0 +1,67 @@
+/* Hero component animations and effects */
+
+/* Radial gradient for the hero component */
+.bg-radial-gradient {
+  background-image: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Slide up and fade in animation */
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-fade-in {
+  animation: slide-up-fade-in 0.5s ease-out forwards;
+}
+
+/* Crossfade animation for expertise rotator */
+@keyframes crossfade {
+  0%, 20% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  30%, 70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80%, 100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.animate-crossfade {
+  animation: crossfade 5s ease-in-out infinite;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-up-fade-in,
+  .animate-crossfade {
+    animation: none;
+    transition: opacity 0.5s ease-out;
+  }
+}
+
+/* Ripple effect animation */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 1s ease-out infinite;
+}
